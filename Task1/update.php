@@ -51,7 +51,7 @@
                 <fieldset>
                     <legend>Personal information:</legend>
                     <div class="form-control">
-                    Name:<br>
+                    Name:
                     <input type="text" name="name" value="<?php echo $name; ?>">
                     <input type="hidden" name="user_id" value="<?php echo $id; ?>">
                     <br>
