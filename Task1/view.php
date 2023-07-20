@@ -12,8 +12,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
     <body class="bg-primary" >
-        <div class="container text-center">
-            <h2 >Staff</h2>
+        <div class="container ">
+            <h2 class="text-center">Staff</h2>
         <table class="table">
             <head>
                 <tr>
@@ -25,6 +25,7 @@
                     <th>Phone Number</th>
                     <th>Gender</th>
                     <th>Blood group</th>
+                    <th>Action</th>
                 </tr>
             </head>
             <tbody>
@@ -47,7 +48,9 @@
                     <td><a class="btn btn-info" href="update.php? id=<?php echo $row['id']; ?>">
                     Edit</a>&nbsp;<a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
                 </tr>
-                <?php  }
+                <?php  
+                
+            }
                 }
                 ?>
             </tbody>

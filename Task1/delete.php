@@ -5,7 +5,7 @@
     {
         $user_id = $_GET['id'];
 
-        $sql = "DELETE FROM 'staff' WHERE 'id'='$user_id'";
+        $sql = "DELETE FROM `staff` WHERE id='$user_id'";
         $result = $conn ->query($sql);
         if($result == TRUE){
             echo "Record deleted successfully";
