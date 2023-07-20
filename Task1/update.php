@@ -45,54 +45,62 @@
     }
     
         ?>
-
-            <h2>User Update Forms </h2>
-            <form action="" method="POST">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class=" text-center">
+            <h2 class=>User Update Forms </h2>
+            <form action="" method="POST" >
+                <div class="form-group ">
                 <fieldset>
                     <legend>Personal information:</legend>
                     <div class="form-control">
-                    Name:
+                    Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                     <input type="text" name="name" value="<?php echo $name; ?>">
                     <input type="hidden" name="user_id" value="<?php echo $id; ?>">
                     <br>
                     </div>
-                    <div>
-                    Date of Joining:<br>
+                    <div class="form-control">
+                    Date of Joining: &nbsp; 
                     <input type="date" name="date" value="<?php echo $date; ?>">
                     <br>
                     </div>
-                    <div>
-                    Address:<br>
+                    <div class="form-control">
+                    Address: &nbsp;
                     <input type="text" name="address" value="<?php echo $address; ?>">
                     <br>
                     </div>
-                    <div>
-                    Department:<br>
+                    <div class="form-control">
+                    Department: &nbsp;
                     <input type="text" name="department" value="<?php echo $department; ?>">
                     <br>
                     </div>
-                    <div>
-                    Phone Number:<br>
+                    <div class="form-control">
+                    Phone Number: &nbsp;
                     <input type="number" name="phonenumber" value="<?php echo $phonenumber; ?>">
                     <br>
                     </div>
-                    <div>
-                    Gender:<br>
+                    <div class="form-control">
+                    Gender: &nbsp;
                     <input type="radio" name="gender" value="<?php echo $gender; ?>">Male
                     <input type="radio" name="gender" value="<?php echo $gender; ?>">female
                     <br>
                     </div>
-                    <div>
-                    Blood group:<br>
+                    <div class="form-control">
+                    Blood group: &nbsp;
                     <input type="text" name="bgroup" value="<?php echo $bgroup; ?>">
                     <br><br>
                     </div>
-                    <div>
+                    <div class="form-control">
                     <input type="submit" value="update" name="update"> 
                     </div>
                 </fieldset>
+                </div>
             </form>
 
-            </body>
-            </html>
+</body>
+</html>
 
